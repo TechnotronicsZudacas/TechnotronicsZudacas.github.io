@@ -1,6 +1,4 @@
-# Technotronics Zudacas
-
-![TechnotronicsZudacas blog](img/logo.jpg)
+# Blog
 
 ## 09/03/2022 | nodered
 
