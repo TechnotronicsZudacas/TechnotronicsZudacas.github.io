@@ -1,1 +1,7 @@
 theme: jekyll-theme-hacker
+description: "Notas sobre las investigaciones de los Technotronics Zudacas"
+url: https://TechnotronicsZudacas.github.io
+
+paginate: 4
+owner: OskarOteroMaske
+year: 2022
