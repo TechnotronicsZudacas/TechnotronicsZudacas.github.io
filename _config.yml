@@ -1,7 +1,32 @@
-theme: jekyll-theme-hacker
+title: Technotronics Zudacas
 description: "Notas sobre las investigaciones de los Technotronics Zudacas"
-url: https://TechnotronicsZudacas.github.io
+author:
+  name: "TechnotronicsZudacas"
+  # email: "TechnotronicsZudacas@gaymail.com"
+  url: "https://TechnotronicsZudacas.github.io"
 
-paginate: 4
-owner: OskarOteroMaske
-year: 2022
+baseurl: /
+
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 3
+paginate_path: /page/:num/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+future: true
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Custom variables
+owner : "TechnotronicsZudacas"
+year : "2022"

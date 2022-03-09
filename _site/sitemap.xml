@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:8081/Node-RED</loc>
+<lastmod>2022-03-09T00:00:00-03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:8081/404</loc>
+</url>
+<url>
+<loc>http://localhost:8081/archivo</loc>
+</url>
+<url>
+<loc>http://localhost:8081/</loc>
+</url>
+<url>
+<loc>http://localhost:8081/nosotros</loc>
+</url>
+</urlset>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technotronics Zudacas</title>
+    <description>Notas sobre las investigaciones de los Technotronics Zudacas</description>
+    <link>http://localhost:8081</link>
+    <atom:link href="http://localhost:8081/feed.xml" rel="self" type="application/rss+xml" />
+    <author>
+      <name>TechnotronicsZudacas</name>
+      <email></email>
+      <uri>https://TechnotronicsZudacas.github.io</uri>
+    </author>
+    
+      <item>
+        <title>Oscar nos presenta Node-RED</title>
+        <description>&lt;p&gt;&lt;img src=&quot;../assets/img/nodered.png&quot; alt=&quot;nodered&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En esta entrada inicial Oscar nos explica como realizo la instalación de un servidor nodered en un equipo Android.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;node-red&quot;&gt;&lt;a href=&quot;#Node-RED&quot;&gt;Node-RED&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.&lt;/p&gt;
+
+&lt;p&gt;It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 09 Mar 2022 00:00:00 -0300</pubDate>
+        <link>http://localhost:8081//Node-RED</link>
+        <link href="http://localhost:8081/Node-RED"/>
+        <guid isPermaLink="true">http://localhost:8081/Node-RED</guid>
+      </item>
+    
+  </channel>
+</rss>
