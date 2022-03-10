@@ -62,6 +62,41 @@
 
 <p>It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.</p>
 
+<hr />
+
+<p>Para usar un celular “viejo” como servidor de node-red (y seguramente para otras cosas en que se use una Raspery Pi).</p>
+
+<p>Primero  instalr desde appstore: termux.</p>
+
+<p>Una vez en termux ejecutar los siguientes comandos dandole <code class="language-plaintext highlighter-rouge">Y</code> cada vez que se detiene a preguntar si estamos seguros:</p>
+
+<p>El tutorial que vi indicaba estos comandos, el tercero y cuarto me dieron error creo que porque la version de la appstore es vieja y la estan dejando de mantener.</p>
+
+<p>Cuando finalizé la instalacion me alerto sobre ese cambio de rumbo y aconseja descargar otras opciones desde github <em>(gente que le gusta complicar lo que ya funciona)</em>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update
+apt upgrade
+apt <span class="nb">install </span>coreutils nano nodejs <span class="c"># (este me da error)</span>
+npm i <span class="nt">-g</span> <span class="nt">--unsafe-perm</span> node-red <span class="c"># (este me da error)</span>
+node-red
+</code></pre></div></div>
+
+<p>en cambio use esta secuencia :</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt update
+apt upgrade
+pkg <span class="nb">install </span>nodejs <span class="c"># (este me lo sugiere en error de la secuencia anterior)</span>
+npm i <span class="nt">-g</span> <span class="nt">--unsafe-perm</span> node-red
+npm <span class="nb">install</span> <span class="nt">-g</span> npm@8.5.3
+node-red <span class="c"># (con esto dejamos corriendo Node-red y podemos apagar la pantalla del cel o usarlo en otra cosa)</span>
+</code></pre></div></div>
+
+<p><img src="../assets/img/nodered_instalacion_cel.jpg" alt="nodered" /></p>
+
+<p>En otro equipo entramos a la direccion ip del celular, que ya tendriamos que haber seteado como ip fija:</p>
+
+<p><code class="language-plaintext highlighter-rouge">http://192.168.0.126:1880/</code></p>
+
 </article>
       </section>
     </div>

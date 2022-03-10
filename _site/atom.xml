@@ -24,6 +24,41 @@
 &lt;p&gt;Is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.&lt;/p&gt;
 
 &lt;p&gt;It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Para usar un celular “viejo” como servidor de node-red (y seguramente para otras cosas en que se use una Raspery Pi).&lt;/p&gt;
+
+&lt;p&gt;Primero  instalr desde appstore: termux.&lt;/p&gt;
+
+&lt;p&gt;Una vez en termux ejecutar los siguientes comandos dandole &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Y&lt;/code&gt; cada vez que se detiene a preguntar si estamos seguros:&lt;/p&gt;
+
+&lt;p&gt;El tutorial que vi indicaba estos comandos, el tercero y cuarto me dieron error creo que porque la version de la appstore es vieja y la estan dejando de mantener.&lt;/p&gt;
+
+&lt;p&gt;Cuando finalizé la instalacion me alerto sobre ese cambio de rumbo y aconseja descargar otras opciones desde github &lt;em&gt;(gente que le gusta complicar lo que ya funciona)&lt;/em&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update
+apt upgrade
+apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;coreutils nano nodejs &lt;span class=&quot;c&quot;&gt;# (este me da error)&lt;/span&gt;
+npm i &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--unsafe-perm&lt;/span&gt; node-red &lt;span class=&quot;c&quot;&gt;# (este me da error)&lt;/span&gt;
+node-red
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;en cambio use esta secuencia :&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt update
+apt upgrade
+pkg &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nodejs &lt;span class=&quot;c&quot;&gt;# (este me lo sugiere en error de la secuencia anterior)&lt;/span&gt;
+npm i &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--unsafe-perm&lt;/span&gt; node-red
+npm &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; npm@8.5.3
+node-red &lt;span class=&quot;c&quot;&gt;# (con esto dejamos corriendo Node-red y podemos apagar la pantalla del cel o usarlo en otra cosa)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/img/nodered_instalacion_cel.jpg&quot; alt=&quot;nodered&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En otro equipo entramos a la direccion ip del celular, que ya tendriamos que haber seteado como ip fija:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://192.168.0.126:1880/&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 09 Mar 2022 00:00:00 -0300</pubDate>
         <link>http://localhost:8081//Node-RED</link>
